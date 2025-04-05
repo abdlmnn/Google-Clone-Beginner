@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+}
+
+body {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.google-header {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 12px 18px;
+}
+
+.title-text {
+    font-size: 5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.60rem;
+    justify-content: right;
+}
+
+.text-link {
+    padding-right: 5px;
+}
+
+.text-link:hover,
+.language-link:hover,
+.lower-container a:hover {
+    text-decoration: underline;
+}
+
+.icon-link {
+    width: 40px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.icon-link:hover {
+    box-shadow: 0 0 4px 1px rgb(234, 233, 233);
+}
+
+.icon-link img {
+    width: 22px;
+}
+
+header nav a, .lower-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.img-button img {
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.img-button img:hover {
+    
+    box-shadow: 1px 1px 4px 1px rgb(143, 141, 141);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-logo-google {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.input-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 585px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(235,235,235);
+    position: relative;
+    top: 17px;
+}
+
+.input-bar:hover,
+.input-bar:focus-within {
+    box-shadow: 0 0 4px 1px rgb(234, 233, 233);
+}
+
+
+.input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.two-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-icon {
+    width: 16px;
+    aspect-ratio: 1/1;
+}
+
+.mic-icon, .cam-icon {
+    width: 22px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.mic-icon:hover, .cam-icon:hover {
+    opacity: 0.75;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button-two-icon {
+    background: transparent;
+    border: none;
+}
+
+.button-grid {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+    position: relative;
+    bottom: 45px;
+}
+
+.button-grid button {
+    padding: 10px 1rem;
+    border: 1px solid transparent;
+    background-color: rgb(247,247,247);
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+}
+
+.button-grid button:hover {
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.language-google {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 130px;
+    right: 2px;
+}
+
+.language-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.language-link {
+    color: #3b75e8;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(244, 243, 243);
+}
+
+footer > div {
+    padding: 15px 1.5rem;
+}
+
+.upper-container {
+    padding-left: 30px;
+}
+
+.lower-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.left-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.right-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 12px 8px;
+    }
+
+    .lower-container {
+        flex-direction: column;
+        gap: 1.8rem;   
+    }
+    
+    .button-grid {
+        bottom: 25px;
+    }
+
+    .language-google {
+        bottom: 90px;
+    }
+
+}
